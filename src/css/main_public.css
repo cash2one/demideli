@@ -1,0 +1,55 @@
+.container-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 55px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+.border-t,
+.border-b {
+    position: relative;
+}
+input, textarea, button {
+    outline: none;
+}
+
+.border-t::after,
+.border-b::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #eceef2;
+    transform: rotateX(60deg);
+    -ms-transform: rotateX(60deg);
+    -moz-transform: rotateX(60deg);
+    -webkit-transform: rotateX(60deg);
+    -o-transform: rotateX(60deg);
+}
+.border-t::after {
+    top: 0;
+}
+.border-b::after {
+    bottom: 0;
+}
+.noMore {
+    text-align: center;
+    font-size: 14px;
+    color: #999;
+    margin: 30% 0 0;
+}
